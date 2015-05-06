@@ -1,22 +1,22 @@
 {
   "name": "react-tutorial",
   "version": "0.0.1",
-  "description": "A repository covering React, Flux (with Flummox), isomorphism and Node JS ",
+  "description": "A repository covering React, Flux (with Flummox), Immutable JS, Isomorphism and Node JS ",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node src/server/app.js",
+    "start": "iojs src/server/boot.js"
   },
   "author": "Jack Callister",
   "license": "ISC",
   "dependencies": {
+    "babel": "^5.2.16",
+    "ejs": "^2.3.1",
     "express": "^4.12.3",
-    "flummox": "^4.0.0-alpha2",
-    "jade": "^1.9.2",
-    "node-jsx": "^0.13.3",
     "react": "^0.13.2"
   },
   "devDependencies": {
-    "babel": "^5.2.15",
+    "babel-core": "^5.2.16",
+    "babel-loader": "^5.0.0",
     "webpack": "^1.8.11"
   }
 }
