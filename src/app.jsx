@@ -1,8 +1,8 @@
 'use strict';
 
 import React from 'react';
-import App from '../app/app';
+import Login from './components/login';
 
 document.addEventListener('DOMContentLoaded', function(){
-  React.render(<App />, document.getElementById('app'));
+  React.render(<Login />, document.getElementById('app'));
 });

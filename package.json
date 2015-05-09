@@ -4,7 +4,8 @@
   "description": "A repository covering React, Flux (with Flummox), Immutable JS, Isomorphism and Node JS ",
   "main": "index.js",
   "scripts": {
-    "start": "iojs server/boot.js",
+    "start": "webpack -w & npm run serve",
+    "serve": "cd dist && python -m SimpleHTTPServer",
     "test": "node_modules/.bin/mocha --compilers js:babel/register tests",
     "lint": "node_modules/.bin/eslint --ext .js --ext .jsx ."
   },

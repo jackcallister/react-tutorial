@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './client/client',
+  entry: './src/app',
 
   output: {
     path: './dist/scripts',
