@@ -1,8 +1,8 @@
 module.exports = {
-  entry: './src/client/app',
+  entry: './client/client',
 
   output: {
-    path: './build/scripts',
+    path: './dist/scripts',
     filename: 'bundle.js'
   },
 
@@ -12,7 +12,7 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.jsx?$/, exclude: /node_modules/, loader: "babel-loader" }
+      { test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader' }
     ]
   }
 };

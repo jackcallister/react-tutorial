@@ -4,7 +4,9 @@
   "description": "A repository covering React, Flux (with Flummox), Immutable JS, Isomorphism and Node JS ",
   "main": "index.js",
   "scripts": {
-    "start": "iojs src/server/boot.js"
+    "start": "iojs server/boot.js",
+    "test": "node_modules/.bin/mocha --compilers js:babel/register tests",
+    "lint": "node_modules/.bin/eslint --ext .js --ext .jsx ."
   },
   "author": "Jack Callister",
   "license": "ISC",
@@ -16,7 +18,12 @@
   },
   "devDependencies": {
     "babel-core": "^5.2.16",
+    "babel-eslint": "^3.1.1",
     "babel-loader": "^5.0.0",
+    "eslint": "^0.20.0",
+    "eslint-plugin-react": "^2.2.0",
+    "jsdom": "^5.3.0",
+    "mocha": "^2.2.4",
     "webpack": "^1.8.11"
   }
 }
