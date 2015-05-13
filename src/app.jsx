@@ -1,8 +1,14 @@
 'use strict';
 
 import React from 'react';
-import Login from './components/login';
+import Router from 'react-router';
+import routes from './routes';
+import Flux from './flux';
 
-document.addEventListener('DOMContentLoaded', function(){
-  React.render(<Login />, document.getElementById('app'));
-});
+const flux = new Flux();
+
+document.addEventListener('DOMContentLoaded', () =>
+  Router.run(routes, Router.HistoryLocation, (Handler) =>
+    React.render(<Handler flux={flux} />, document.getElementById('app'))
+  )
+);
